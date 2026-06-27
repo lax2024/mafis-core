@@ -1,0 +1,2400 @@
+[
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.588,
+        "fused_score": 0.5880596004357509,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.05772794401314118,
+            "sma20": 367.7995010375977,
+            "sma50": 390.33259948730466,
+            "volatility": 0.031869485041435865
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 400.6199951171875,
+            "rsi": 60.310305555594276,
+            "macd": -3.216014531486337,
+            "atr": 15.721230922042015,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5562576651573181,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA trades within normal range",
+                "TSLA market activity remains stable",
+                "TSLA beats earnings expectations"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04532419002594199,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.23735383848003183,
+            "prob_loss_30d": 0.447,
+            "risk_score": 26.388079912849832,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.587,
+        "fused_score": 0.5871487374179701,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.054356255591295435,
+            "sma20": 369.02650146484376,
+            "sma50": 390.23839965820315,
+            "volatility": 0.03126542904756693
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 392.5,
+            "rsi": 56.357310850552814,
+            "macd": -1.4250718930810535,
+            "atr": 15.917571697342922,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5644134481747946,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA analysts maintain outlook",
+                "TSLA market activity remains stable",
+                "TSLA gains investor confidence"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045289368132626476,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.17925893245116167,
+            "prob_loss_30d": 0.4525,
+            "risk_score": 26.570252516405983,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.586,
+        "fused_score": 0.585654541066856,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.05244357042316589,
+            "sma20": 369.3050018310547,
+            "sma50": 389.7446002197266,
+            "volatility": 0.030634801339339393
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 386.4200134277344,
+            "rsi": 53.52820671670234,
+            "macd": -0.49068474461853384,
+            "atr": 15.404174407348338,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6504294474919637,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA beats earnings expectations",
+                "TSLA gains investor confidence",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04525454623931095,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.1350510147568741,
+            "prob_loss_30d": 0.4615,
+            "risk_score": 26.8690917866288,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.585,
+        "fused_score": 0.584910344715742,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.05041623677405347,
+            "sma20": 369.5290023803711,
+            "sma50": 389.14840026855467,
+            "volatility": 0.030618945738014658
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 387.510009765625,
+            "rsi": 53.97428015416567,
+            "macd": 0.3339280823518038,
+            "atr": 14.854591994810244,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA expands into new markets",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045219724345995436,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.14174532989498656,
+            "prob_loss_30d": 0.466,
+            "risk_score": 27.01793105685162,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.582,
+        "fused_score": 0.5821661483646279,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.04947224536485495,
+            "sma20": 368.91750183105466,
+            "sma50": 388.1186004638672,
+            "volatility": 0.031636162092552905
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 373.7200012207031,
+            "rsi": 47.73190483062449,
+            "macd": -0.12387084690845995,
+            "atr": 15.15926369571055,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA gains investor confidence",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04518490245267992,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.04137895691312771,
+            "prob_loss_30d": 0.4825,
+            "risk_score": 27.566770327074426,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.588,
+        "fused_score": 0.5877552853468472,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.046378618292966696,
+            "sma20": 369.127001953125,
+            "sma50": 387.07920043945313,
+            "volatility": 0.030593932256635786
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 376.29998779296875,
+            "rsi": 48.92214141027984,
+            "macd": -0.2753226934484019,
+            "atr": 14.935744739523326,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5562576651573181,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA trades within normal range",
+                "TSLA market activity remains stable",
+                "TSLA beats earnings expectations"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045150080559364404,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.0592745787487993,
+            "prob_loss_30d": 0.449,
+            "risk_score": 26.44894293063058,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.215,
+        "fused_score": -0.214738911004267,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.04230319297465551,
+            "sma20": 369.96900329589846,
+            "sma50": 386.31120056152344,
+            "volatility": 0.029854811829506396
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 378.6700134277344,
+            "rsi": 50.047457426232775,
+            "macd": -0.20178209302457617,
+            "atr": 15.066049402426067,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA faces regulatory pressure",
+                "TSLA stock declines amid uncertainty",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04511525866604888,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.07545300304630477,
+            "prob_loss_30d": 0.464,
+            "risk_score": 26.947782200853396,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.215,
+        "fused_score": -0.21481644068871442,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.03755497644602862,
+            "sma20": 371.00600280761716,
+            "sma50": 385.48280029296876,
+            "volatility": 0.02954936325154053
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 376.0199890136719,
+            "rsi": 48.75405382472554,
+            "macd": -0.3532632614151794,
+            "atr": 14.686331538770045,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": -0.5327459573745728,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA misses revenue estimates",
+                "TSLA faces regulatory pressure",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045080436772733365,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.055572119260949904,
+            "prob_loss_30d": 0.4645,
+            "risk_score": 26.96328813774288,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.581,
+        "fused_score": 0.5807726962935049,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.03552577847737139,
+            "sma20": 371.0585021972656,
+            "sma50": 384.72619995117185,
+            "volatility": 0.0278347472415932
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 372.79998779296875,
+            "rsi": 47.159241073940635,
+            "macd": -0.7247854905930922,
+            "atr": 14.091592453846443,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5202151338259379,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA market activity remains stable",
+                "TSLA analysts maintain outlook",
+                "TSLA expands into new markets"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04504561487941785,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.03153282879714968,
+            "prob_loss_30d": 0.491,
+            "risk_score": 27.845460741299025,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.214,
+        "fused_score": -0.2136381667242759,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.033986713832360405,
+            "sma20": 371.077001953125,
+            "sma50": 384.13239990234376,
+            "volatility": 0.0277479353964367
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 381.6300048828125,
+            "rsi": 51.81412550563179,
+            "macd": -0.30321566878660633,
+            "atr": 14.269334910732741,
+            "reasons": [
+                "MACD bullish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA stock declines amid uncertainty",
+                "TSLA faces regulatory pressure",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04501079298610233,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.09361535250606684,
+            "prob_loss_30d": 0.4575,
+            "risk_score": 26.727633344855178,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.587,
+        "fused_score": 0.58736763692461,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.028995763285822276,
+            "sma20": 372.58850250244143,
+            "sma50": 383.71460021972655,
+            "volatility": 0.025025155631859954
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 390.82000732421875,
+            "rsi": 56.144293396457996,
+            "macd": 0.763635134721369,
+            "atr": 14.608669561684724,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA gains investor confidence",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04497597109278681,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.1562353964972388,
+            "prob_loss_30d": 0.4515,
+            "risk_score": 26.526472615077992,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.213,
+        "fused_score": -0.21287655942650408,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.022840461697878452,
+            "sma20": 374.57300262451173,
+            "sma50": 383.3284002685547,
+            "volatility": 0.024274783512134798
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 392.510009765625,
+            "rsi": 56.91113633001671,
+            "macd": 1.7255995187247208,
+            "atr": 14.268052192716471,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.2976251244544983,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA faces regulatory pressure",
+                "TSLA misses revenue estimates",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04494114919947129,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.16670195050973813,
+            "prob_loss_30d": 0.453,
+            "risk_score": 26.57531188530081,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.585,
+        "fused_score": 0.5854625775557152,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.0167316014090485,
+            "sma20": 376.70900268554686,
+            "sma50": 383.11920043945315,
+            "volatility": 0.023889106670394067
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 389.3699951171875,
+            "rsi": 54.98728456506571,
+            "macd": 2.209124867356593,
+            "atr": 14.186048108558147,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.8855502804120382,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA beats earnings expectations",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04490632730615578,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.14420483916363977,
+            "prob_loss_30d": 0.463,
+            "risk_score": 26.907484488856962,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.589,
+        "fused_score": 0.5893850478712679,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 0.008940041507920517,
+            "sma20": 379.4830032348633,
+            "sma50": 382.90620056152346,
+            "volatility": 0.02390225179166347
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 398.7300109863281,
+            "rsi": 59.39380912499187,
+            "macd": 3.3094479891237825,
+            "atr": 14.43418781156409,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.8855502804120382,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA beats earnings expectations",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04487150541284026,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.20597130820309298,
+            "prob_loss_30d": 0.4395,
+            "risk_score": 26.12299042574644,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.589,
+        "fused_score": 0.589224184853487,
+        "regime": {
+            "regime": "BEARISH",
+            "confidence": 6.5229555233958225e-06,
+            "sma20": 382.79150390625,
+            "sma50": 382.7940008544922,
+            "volatility": 0.02454243343611086
+        },
+        "weights_used": {
+            "technical": 0.35,
+            "sentiment": 0.4,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BEARISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 411.7900085449219,
+            "rsi": 64.6009965747503,
+            "macd": 5.17563316909559,
+            "atr": 14.624601238704624,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6062311331431071,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA beats earnings expectations",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04483668351952474,
+            "cvar_95": 0.05751335141813483,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.28924397133747726,
+            "prob_loss_30d": 0.4405,
+            "risk_score": 26.15516302930259,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.145,
+        "fused_score": -0.14543667816429368,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0093220280737149,
+            "sma20": 386.7615036010742,
+            "sma50": 383.1894012451172,
+            "volatility": 0.025512365270852565
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 428.3500061035156,
+            "rsi": 69.87602800132414,
+            "macd": 7.899787936777898,
+            "atr": 14.966415721998084,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.6271100441614786,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA misses revenue estimates",
+                "TSLA stock declines amid uncertainty",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04480186162620921,
+            "cvar_95": 0.056454060602141025,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.38994895062582713,
+            "prob_loss_30d": 0.4085,
+            "risk_score": 25.08733563285874,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.146,
+        "fused_score": -0.14566840685986152,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0191420611744515,
+            "sma20": 391.3905029296875,
+            "sma50": 384.03920104980466,
+            "volatility": 0.026281151918723267
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 445.0,
+            "rsi": 74.06127533567363,
+            "macd": 11.272275795658516,
+            "atr": 16.208815815126723,
+            "reasons": [
+                "RSI indicates overbought",
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.6271100441614786,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA stock declines amid uncertainty",
+                "TSLA misses revenue estimates",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04469223379961629,
+            "cvar_95": 0.056454060602141025,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.4860985125218748,
+            "prob_loss_30d": 0.41,
+            "risk_score": 25.133681371972312,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.551,
+        "fused_score": 0.5513498644445706,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.02654730128593558,
+            "sma20": 394.8530029296875,
+            "sma50": 384.6418011474609,
+            "volatility": 0.02708152893482077
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 433.45001220703125,
+            "rsi": 67.09717152824189,
+            "macd": 12.864712832143937,
+            "atr": 16.875327442870176,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5644134481747946,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA market activity remains stable",
+                "TSLA trades within normal range",
+                "TSLA gains investor confidence"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04458260597302337,
+            "cvar_95": 0.056454060602141025,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.41508010697416753,
+            "prob_loss_30d": 0.428,
+            "risk_score": 25.730027111085878,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.144,
+        "fused_score": -0.14363186425099722,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.030646729500391,
+            "sma20": 397.51900177001954,
+            "sma50": 385.69860107421874,
+            "volatility": 0.022527168069372498
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 445.2699890136719,
+            "rsi": 70.18677529369788,
+            "macd": 14.908646405622164,
+            "atr": 17.32637568291375,
+            "reasons": [
+                "RSI indicates overbought",
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA stock declines amid uncertainty",
+                "TSLA faces regulatory pressure",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.044472978146430454,
+            "cvar_95": 0.056454060602141025,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.48212339960917433,
+            "prob_loss_30d": 0.398,
+            "risk_score": 24.72637285019945,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.144,
+        "fused_score": -0.14436359294656503,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.03569245843973205,
+            "sma20": 400.23900146484374,
+            "sma50": 386.44580078125,
+            "volatility": 0.022426346264760876
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 443.29998779296875,
+            "rsi": 69.02345105750837,
+            "macd": 16.182968664608836,
+            "atr": 16.861635061119976,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.5327459573745728,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA faces regulatory pressure",
+                "TSLA misses revenue estimates",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.044363350319837534,
+            "cvar_95": 0.056454060602141025,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.46892672576908967,
+            "prob_loss_30d": 0.4025,
+            "risk_score": 24.872718589313013,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.551,
+        "fused_score": 0.5513096004357508,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.03759350379239094,
+            "sma20": 401.32000122070315,
+            "sma50": 386.77960083007815,
+            "volatility": 0.024772668049184515
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 422.239990234375,
+            "rsi": 57.96299982434672,
+            "macd": 15.316948194301972,
+            "atr": 17.1786602719257,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5202151338259379,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA market activity remains stable",
+                "TSLA analysts maintain outlook",
+                "TSLA expands into new markets"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04532419002594199,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.3396586385977653,
+            "prob_loss_30d": 0.4275,
+            "risk_score": 25.73807991284983,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.552,
+        "fused_score": 0.5521487374179701,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.03914198124128625,
+            "sma20": 402.1945007324219,
+            "sma50": 387.04480041503905,
+            "volatility": 0.025275525647948185
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 409.989990234375,
+            "rsi": 52.67553394504632,
+            "macd": 13.486682034439866,
+            "atr": 17.159470513200706,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6062311331431071,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA beats earnings expectations",
+                "TSLA expands into new markets",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045289368132626476,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.26260248988345003,
+            "prob_loss_30d": 0.4225,
+            "risk_score": 25.570252516405983,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.548,
+        "fused_score": 0.5483212077335227,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0411351134950942,
+            "sma20": 403.0789993286133,
+            "sma50": 387.15340026855466,
+            "volatility": 0.02523380113000351
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 404.1099853515625,
+            "rsi": 50.30349838884049,
+            "macd": 11.429958220141941,
+            "atr": 17.10236442779216,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA expands into new markets",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04525454623931095,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.22462750108990412,
+            "prob_loss_30d": 0.4455,
+            "risk_score": 26.335758453295465,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.63,
+        "fused_score": -0.6296729886175914,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.04400539707341037,
+            "sma20": 404.5664993286133,
+            "sma50": 387.5138006591797,
+            "volatility": 0.026110830806951785
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 417.260009765625,
+            "rsi": 55.16593468041617,
+            "macd": 10.73731378077224,
+            "atr": 16.834338822591377,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.32813920577367145,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA faces regulatory pressure",
+                "TSLA stock declines amid uncertainty",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045219724345995436,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.30351942719673525,
+            "prob_loss_30d": 0.4335,
+            "risk_score": 25.934597723518284,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.069,
+        "fused_score": 0.06858281503129449,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.04915628335389544,
+            "sma20": 406.7729995727539,
+            "sma50": 387.71440063476564,
+            "volatility": 0.024411722908631497
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 417.8500061035156,
+            "rsi": 55.376892369224606,
+            "macd": 10.119346320690113,
+            "atr": 16.635458778706568,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA gains investor confidence",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04518490245267992,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.30576477892501636,
+            "prob_loss_30d": 0.444,
+            "risk_score": 26.283436993741095,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.631,
+        "fused_score": -0.6309947146531529,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.05388165458022487,
+            "sma20": 409.25850067138674,
+            "sma50": 388.33440063476564,
+            "volatility": 0.024602082901663155
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 426.010009765625,
+            "rsi": 58.299397545040364,
+            "macd": 10.170804057823261,
+            "atr": 16.422926263124175,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA stock declines amid uncertainty",
+                "TSLA faces regulatory pressure",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.0451500805593644,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.3526179026025417,
+            "prob_loss_30d": 0.4415,
+            "risk_score": 26.19894293063058,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.071,
+        "fused_score": 0.07101108899573298,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.05864168371754885,
+            "sma20": 412.0044998168945,
+            "sma50": 389.1822003173828,
+            "volatility": 0.024730783360909163
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 433.5899963378906,
+            "rsi": 60.863526887004156,
+            "macd": 10.699884643304017,
+            "atr": 15.906288830913187,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6062311331431071,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA beats earnings expectations",
+                "TSLA expands into new markets",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04511525866604888,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.3949933376262485,
+            "prob_loss_30d": 0.4295,
+            "risk_score": 25.797782200853394,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.552,
+        "fused_score": 0.5523502259779522,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.06445707439130374,
+            "sma20": 415.22149963378905,
+            "sma50": 390.0782000732422,
+            "volatility": 0.02456937650943088
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 440.3599853515625,
+            "rsi": 63.04891703718225,
+            "macd": 11.532526565858973,
+            "atr": 15.627983175202184,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5562576651573181,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA analysts maintain outlook",
+                "TSLA market activity remains stable",
+                "TSLA beats earnings expectations"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045080436772733365,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.4318667870518109,
+            "prob_loss_30d": 0.4215,
+            "risk_score": 25.529954804409545,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.146,
+        "fused_score": -0.14581063703982844,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.07098805249574752,
+            "sma20": 418.6865005493164,
+            "sma50": 390.93480041503904,
+            "volatility": 0.024277165174862385
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 442.1000061035156,
+            "rsi": 63.61134186495339,
+            "macd": 12.19226161854806,
+            "atr": 15.058841765856647,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.5327459573745728,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA misses revenue estimates",
+                "TSLA faces regulatory pressure",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04504561487941785,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.4400991110842063,
+            "prob_loss_30d": 0.4105,
+            "risk_score": 25.162127407965695,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "BUY",
+        "confidence": 0.555,
+        "fused_score": 0.5546951666090575,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0755484375144124,
+            "sma20": 421.3945007324219,
+            "sma50": 391.79500061035156,
+            "volatility": 0.02453799126203388
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bullish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "HOLD",
+            "confidence": 0.6,
+            "price": 435.7900085449219,
+            "rsi": 60.042281093387494,
+            "macd": 12.066843274886196,
+            "atr": 14.980352455952188,
+            "reasons": [
+                "MACD bullish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6062311331431071,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA beats earnings expectations",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04501079298610233,
+            "cvar_95": 0.056776644182240626,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.4025889763779465,
+            "prob_loss_30d": 0.4075,
+            "risk_score": 25.06096667818851,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.07,
+        "fused_score": 0.06989452272439256,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0767908095942511,
+            "sma20": 422.6475006103516,
+            "sma50": 392.50660095214846,
+            "volatility": 0.026826083604786374
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 415.8800048828125,
+            "rsi": 50.42797868054142,
+            "macd": 10.242804755952761,
+            "atr": 15.364614137377137,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5644134481747946,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA analysts maintain outlook",
+                "TSLA market activity remains stable",
+                "TSLA gains investor confidence"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04581465629409132,
+            "cvar_95": 0.05688209644943121,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.2835678546047387,
+            "prob_loss_30d": 0.4355,
+            "risk_score": 26.02109545512148,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.629,
+        "fused_score": -0.6290949320488883,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.07770597957626425,
+            "sma20": 424.20899963378906,
+            "sma50": 393.62220092773435,
+            "volatility": 0.027047986176962965
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 423.739990234375,
+            "rsi": 53.58756366872476,
+            "macd": 9.323995006987616,
+            "atr": 15.036428801187393,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA faces regulatory pressure",
+                "TSLA stock declines amid uncertainty",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04575138493377697,
+            "cvar_95": 0.05688209644943121,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.32796264114356377,
+            "prob_loss_30d": 0.4295,
+            "risk_score": 25.818986409777665,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.629,
+        "fused_score": -0.6289177201555026,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.07971598845969657,
+            "sma20": 425.9255004882813,
+            "sma50": 394.4792010498047,
+            "volatility": 0.02691800891813378
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 423.70001220703125,
+            "rsi": 53.568861578906905,
+            "macd": 8.494684335309671,
+            "atr": 15.219541469359719,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.6271100441614786,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA misses revenue estimates",
+                "TSLA stock declines amid uncertainty",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04568811357346263,
+            "cvar_95": 0.05688209644943121,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.32641358341594495,
+            "prob_loss_30d": 0.4285,
+            "risk_score": 25.78354403110052,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.07,
+        "fused_score": 0.07017615840454976,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.08027554286907036,
+            "sma20": 426.91150054931643,
+            "sma50": 395.1876013183594,
+            "volatility": 0.02676406328295728
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 418.45001220703125,
+            "rsi": 51.04922499661918,
+            "macd": 7.329330568777834,
+            "atr": 14.788860102095022,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5202151338259379,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA analysts maintain outlook",
+                "TSLA market activity remains stable",
+                "TSLA expands into new markets"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.045624842213148276,
+            "cvar_95": 0.05688209644943121,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.2945307227027098,
+            "prob_loss_30d": 0.434,
+            "risk_score": 25.96476831909004,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.636,
+        "fused_score": -0.6361845796563604,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.07736979757255692,
+            "sma20": 425.8720001220703,
+            "sma50": 395.2886010742188,
+            "volatility": 0.029823437818333087
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 391.0,
+            "rsi": 40.360032127017796,
+            "macd": 4.143034415307056,
+            "atr": 16.310369859877504,
+            "reasons": [
+                "MACD bearish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": -0.563260038693746,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA stock declines amid uncertainty",
+                "TSLA faces regulatory pressure",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.046789270578609925,
+            "cvar_95": 0.05863927569665863,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.12647654369280537,
+            "prob_loss_30d": 0.471,
+            "risk_score": 27.236915931272094,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.07,
+        "fused_score": 0.06965301099027336,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.07291602684682938,
+            "sma20": 424.9020004272461,
+            "sma50": 396.0254016113281,
+            "volatility": 0.030272969714369973
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 408.95001220703125,
+            "rsi": 48.024181907537866,
+            "macd": 3.0313442783588584,
+            "atr": 16.71248647938506,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5644134481747946,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA market activity remains stable",
+                "TSLA trades within normal range",
+                "TSLA gains investor confidence"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04676372669880658,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.23194781433248365,
+            "prob_loss_30d": 0.436,
+            "risk_score": 26.069397801945318,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.066,
+        "fused_score": 0.06591355621699241,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.06494112310035398,
+            "sma20": 422.48600006103516,
+            "sma50": 396.72240173339844,
+            "volatility": 0.02929568983945534
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 396.67999267578125,
+            "rsi": 43.87372175624924,
+            "macd": 1.147011766537787,
+            "atr": 17.965881018763344,
+            "reasons": [
+                "MACD bearish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.5644134481747946,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA market activity remains stable",
+                "TSLA trades within normal range",
+                "TSLA gains investor confidence"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04670045533849223,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.1579532213079845,
+            "prob_loss_30d": 0.4585,
+            "risk_score": 26.81728875660151,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.062,
+        "fused_score": 0.06167410144371148,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.05700308946836347,
+            "sma20": 419.89299926757815,
+            "sma50": 397.2486016845703,
+            "volatility": 0.029862920335380922
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 381.5899963378906,
+            "rsi": 39.36759204967422,
+            "macd": -1.5461488752795844,
+            "atr": 17.89260397649576,
+            "reasons": [
+                "MACD bearish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.8855502804120382,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA beats earnings expectations",
+                "TSLA gains investor confidence",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04663718397817788,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.06489289575235377,
+            "prob_loss_30d": 0.484,
+            "risk_score": 27.665179711257696,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.065,
+        "fused_score": 0.06501798000376387,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0497500427894164,
+            "sma20": 417.5869995117188,
+            "sma50": 397.7966015625,
+            "volatility": 0.031222987145099627
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 399.1499938964844,
+            "rsi": 46.2817749873921,
+            "macd": -2.2377575629092803,
+            "atr": 17.963132613579823,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.32113683223724365,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA analysts maintain outlook",
+                "TSLA trades within normal range",
+                "TSLA beats earnings expectations"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.046573912617863526,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.16914927715901867,
+            "prob_loss_30d": 0.464,
+            "risk_score": 26.996403999247217,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.066,
+        "fused_score": 0.06644519189714958,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.043794874420526556,
+            "sma20": 415.7434997558594,
+            "sma50": 398.3000012207031,
+            "volatility": 0.03165271065306027
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 406.42999267578125,
+            "rsi": 48.88422580979987,
+            "macd": -2.173374067257498,
+            "atr": 18.102907636454287,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.849507749080658,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA expands into new markets",
+                "TSLA gains investor confidence",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04651064125754918,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.21026261700387666,
+            "prob_loss_30d": 0.4555,
+            "risk_score": 26.710961620570075,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "SELL",
+        "confidence": 0.633,
+        "fused_score": -0.632960929542798,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.03976296863321801,
+            "sma20": 415.18899993896486,
+            "sma50": 399.311201171875,
+            "volatility": 0.030082901781678096
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment negative",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 411.1499938964844,
+            "rsi": 50.556716353446824,
+            "macd": -1.7216390480182326,
+            "atr": 17.49341475016423,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": -0.5327459573745728,
+            "label": "NEGATIVE",
+            "headlines": [
+                "TSLA misses revenue estimates",
+                "TSLA faces regulatory pressure",
+                "TSLA analysts maintain outlook"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04644736989723483,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.23606292041261898,
+            "prob_loss_30d": 0.452,
+            "risk_score": 26.592185908559596,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.066,
+        "fused_score": 0.06621628235058769,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.036404576697581764,
+            "sma20": 414.92250061035156,
+            "sma50": 400.34800109863284,
+            "volatility": 0.029573344331693233
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 404.6600036621094,
+            "rsi": 48.220428202456596,
+            "macd": -1.8658158003818812,
+            "atr": 17.092456898315085,
+            "reasons": [
+                "MACD bearish crossover",
+                "Price above SMA50"
+            ]
+        },
+        "sentiment": {
+            "score": 0.6143869161605835,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA expands into new markets",
+                "TSLA trades within normal range"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04638409853692048,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.19785879514101518,
+            "prob_loss_30d": 0.457,
+            "risk_score": 26.756743529882453,
+            "risk_label": "MODERATE"
+        }
+    },
+    {
+        "ticker": "TSLA",
+        "recommendation": "HOLD",
+        "confidence": 0.064,
+        "fused_score": 0.06406016091064011,
+        "regime": {
+            "regime": "BULLISH",
+            "confidence": 0.0328731617954736,
+            "sma20": 414.53600158691404,
+            "sma50": 401.34260131835936,
+            "volatility": 0.029758072128517152
+        },
+        "weights_used": {
+            "technical": 0.4,
+            "sentiment": 0.35,
+            "risk": 0.25
+        },
+        "reasoning": [
+            "Technical trend bearish",
+            "Market sentiment positive",
+            "Risk is manageable",
+            "Market regime detected as BULLISH"
+        ],
+        "technical": {
+            "ticker": "TSLA",
+            "signal": "SELL",
+            "confidence": 0.7,
+            "price": 396.3800048828125,
+            "rsi": 45.34160278604254,
+            "macd": -2.618024659409798,
+            "atr": 16.741566593307823,
+            "reasons": [
+                "MACD bearish crossover"
+            ]
+        },
+        "sentiment": {
+            "score": 0.849507749080658,
+            "label": "POSITIVE",
+            "headlines": [
+                "TSLA gains investor confidence",
+                "TSLA expands into new markets",
+                "TSLA market activity remains stable"
+            ]
+        },
+        "risk": {
+            "ticker": "TSLA",
+            "var_95": 0.04632082717660613,
+            "cvar_95": 0.05772577192759309,
+            "max_drawdown": -0.299318207359553,
+            "sharpe_ratio": 0.14876116010721702,
+            "prob_loss_30d": 0.47,
+            "risk_score": 27.187967817871968,
+            "risk_label": "MODERATE"
+        }
+    }
+]
