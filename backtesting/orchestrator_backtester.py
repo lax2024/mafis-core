@@ -22,6 +22,9 @@ class Backtester:
         trades = []
 
         equity_curve = []
+        buy_hold_curve = []
+
+        buy_hold_shares = self.capital / float(df.iloc[60]["Close"])
 
         for i in range(60, len(df) - 1):
             historical_df = df.iloc[:i]
@@ -34,8 +37,7 @@ class Backtester:
             signal = result["recommendation"]
             current_price = float(df.iloc[i]["Close"])
 
-            # BUY
-            if signal == "BUY" and cash > 0:
+            if signal in ["BUY", "STRONG BUY"] and cash > 0:
                 shares = cash / current_price
                 cash = 0
 
@@ -45,8 +47,7 @@ class Backtester:
                     "price": current_price
                 })
 
-            # SELL
-            elif signal == "SELL" and shares > 0:
+            elif signal in ["SELL", "STRONG SELL"] and shares > 0:
                 cash = shares * current_price
                 shares = 0
 
@@ -59,14 +60,22 @@ class Backtester:
             portfolio_value = cash + (shares * current_price)
             equity_curve.append(portfolio_value)
 
+            buy_hold_value = buy_hold_shares * current_price
+            buy_hold_curve.append(buy_hold_value)
+
         final_price = float(df.iloc[-1]["Close"])
         final_value = cash + (shares * final_price)
 
-        total_return = (
+        strategy_return = (
             (final_value - self.capital) / self.capital
         ) * 100
 
-        # ===== PERFORMANCE METRICS =====
+        buy_hold_final = buy_hold_shares * final_price
+        buy_hold_return = (
+            (buy_hold_final - self.capital) / self.capital
+        ) * 100
+
+        alpha = strategy_return - buy_hold_return
 
         profits = []
         buy_price = None
@@ -99,20 +108,55 @@ class Backtester:
             if total_trades > 0 else 0
         )
 
-        peak = max(equity_curve)
-        trough = min(equity_curve)
+        running_peak = equity_curve[0]
+        drawdowns = []
 
-        max_drawdown = (
-            ((peak - trough) / peak) * 100
-            if peak > 0 else 0
+        for value in equity_curve:
+            running_peak = max(running_peak, value)
+            drawdown = (
+                (running_peak - value) / running_peak
+            ) * 100
+            drawdowns.append(drawdown)
+
+        max_drawdown = max(drawdowns)
+
+        returns = []
+
+        for i in range(1, len(equity_curve)):
+            r = (
+                equity_curve[i] - equity_curve[i - 1]
+            ) / equity_curve[i - 1]
+            returns.append(r)
+
+        avg_return = (
+            sum(returns) / len(returns)
+            if returns else 0
         )
 
-        # Plot equity curve
-        plt.figure(figsize=(12, 6))
-        plt.plot(equity_curve)
-        plt.title(f"{self.ticker} Equity Curve")
+        volatility = (
+            (
+                sum(
+                    (r - avg_return) ** 2
+                    for r in returns
+                ) / len(returns)
+            ) ** 0.5
+            if returns else 0
+        )
+
+        sharpe_ratio = (
+            (avg_return / volatility) * (252 ** 0.5)
+            if volatility > 0 else 0
+        )
+
+        plt.figure(figsize=(14, 7))
+        plt.plot(equity_curve, label="MAFIS Strategy")
+        plt.plot(buy_hold_curve, label="Buy & Hold")
+        plt.title(
+            f"{self.ticker} Strategy vs Buy-and-Hold"
+        )
         plt.xlabel("Trading Steps")
         plt.ylabel("Portfolio Value")
+        plt.legend()
         plt.grid(True)
         plt.show()
 
@@ -120,13 +164,26 @@ class Backtester:
             "ticker": self.ticker,
             "initial_capital": self.capital,
             "final_value": round(final_value, 2),
-            "total_return_percent": round(total_return, 2),
+            "strategy_return_percent": round(
+                strategy_return, 2
+            ),
+            "buy_hold_return_percent": round(
+                buy_hold_return, 2
+            ),
+            "alpha_percent": round(alpha, 2),
             "total_trades": total_trades,
             "winning_trades": winning_trades,
             "losing_trades": losing_trades,
             "win_rate": round(win_rate, 2),
-            "average_profit_per_trade": round(avg_profit, 2),
-            "max_drawdown_percent": round(max_drawdown, 2),
+            "average_profit_per_trade": round(
+                avg_profit, 2
+            ),
+            "max_drawdown_percent": round(
+                max_drawdown, 2
+            ),
+            "sharpe_ratio": round(
+                sharpe_ratio, 2
+            ),
             "trades": trades
         }
 

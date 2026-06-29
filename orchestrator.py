@@ -134,14 +134,20 @@ class Orchestrator:
         )
 
         # Balanced thresholds
-        if fused_score >= 0.30:
+        if fused_score >= 0.55:
+           recommendation = "STRONG BUY"
+
+        elif fused_score >= 0.30:
             recommendation = "BUY"
 
+        elif fused_score <= -0.55:
+            recommendation = "STRONG SELL"
+
         elif fused_score <= -0.30:
-            recommendation = "SELL"
+           recommendation = "SELL"
 
         else:
-            recommendation = "HOLD"
+          recommendation = "HOLD"
 
         # Debug logs
         print({

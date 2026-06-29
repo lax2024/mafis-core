@@ -29,51 +29,40 @@
 
 
 
+import os
 import requests
+from dotenv import load_dotenv
 
-API_KEY = "aabae42161324de381925fb57478056e"
+load_dotenv(dotenv_path=".env")
 
-COMPANY_MAP = {
-    "AAPL": ["Apple", "AAPL"],
-    "TSLA": ["Tesla", "TSLA"],
-    "MSFT": ["Microsoft", "MSFT"],
-    "GOOGL": ["Google", "Alphabet", "GOOGL"],
-    "AMZN": ["Amazon", "AMZN"],
-    "META": ["Meta", "Facebook", "META"],
-    "NVDA": ["Nvidia", "NVDA"]
-}
+API_KEY = os.getenv("NEWS_API_KEY")
 
 
-def fetch_news(ticker):
-    keywords = COMPANY_MAP.get(ticker.upper(), [ticker])
+def fetch_news(ticker, historical_date=None):
+    try:
+        url = (
+            f"https://newsapi.org/v2/everything?"
+            f"q={ticker}&language=en&sortBy=publishedAt"
+            f"&apiKey={API_KEY}"
+        )
 
-    # Use only main company name for API search
-    query = keywords[0]
+        if historical_date:
+            date_str = str(historical_date).split(" ")[0]
+            url += f"&from={date_str}&to={date_str}"
 
-    url = (
-        f"https://newsapi.org/v2/everything?"
-        f"q={query}&language=en&sortBy=publishedAt&pageSize=15&apiKey={API_KEY}"
-    )
+        response = requests.get(url)
+        data = response.json()
 
-    response = requests.get(url)
-    data = response.json()
+        articles = data.get("articles", [])
 
-    articles = data.get("articles", [])
-
-    headlines = []
-
-    for article in articles:
-        title = article.get("title", "")
-
-        # Soft filter
-        if any(keyword.lower() in title.lower() for keyword in keywords):
-            headlines.append(title)
-
-    # fallback if filter removes everything
-    if len(headlines) == 0:
         headlines = [
-            article.get("title", "")
-            for article in articles[:10]
+            article["title"]
+            for article in articles[:5]
+            if article.get("title")
         ]
 
-    return headlines
+        return headlines
+
+    except Exception as e:
+        print("[NewsFetcher Error]", e)
+        return []

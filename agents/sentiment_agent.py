@@ -1,14 +1,16 @@
 print("NEW SENTIMENT LOGIC LOADED")
 
-from transformers import pipeline
 import random
+from transformers import pipeline
+from data.news_fetcher import fetch_news
 
 
 class SentimentAgent:
     def __init__(self):
         self.model = pipeline(
             "sentiment-analysis",
-            model="./models/finbert_custom"
+             model="/content/mafis-core/models/finbert_custom"
+
         )
 
         self.label_map = {
@@ -17,7 +19,7 @@ class SentimentAgent:
             "LABEL_2": "POSITIVE"
         }
 
-    def generate_mock_headlines(self, ticker):
+    def _mock_headlines(self, ticker):
         bullish = [
             f"{ticker} beats earnings expectations",
             f"{ticker} expands into new markets",
@@ -39,60 +41,89 @@ class SentimentAgent:
         mood = random.choice(["bullish", "bearish", "neutral"])
 
         if mood == "bullish":
-            return random.sample(bullish, 2) + [
-                random.choice(neutral)
-            ]
+            return random.sample(bullish, 2) + [random.choice(neutral)]
 
         elif mood == "bearish":
-            return random.sample(bearish, 2) + [
-                random.choice(neutral)
-            ]
+            return random.sample(bearish, 2) + [random.choice(neutral)]
 
         else:
-            return random.sample(neutral, 2) + [
-                random.choice(bullish)
-            ]
+            return random.sample(neutral, 2) + [random.choice(bullish)]
+
+    def _score_headlines(self, headlines):
+        results = self.model(
+            headlines,
+            truncation=True,
+            max_length=512
+        )
+
+        score = 0.0
+        breakdown = []
+
+        for headline, r in zip(headlines, results):
+            raw_label = r["label"]
+            confidence = r["score"]
+
+            label = self.label_map.get(
+                raw_label,
+                raw_label
+            ).upper()
+
+            if label == "POSITIVE":
+                score += confidence
+
+            elif label == "NEGATIVE":
+                score -= confidence
+
+            breakdown.append({
+                "headline": headline,
+                "label": label,
+                "confidence": round(confidence, 4)
+            })
+
+        score = score / len(results)
+
+        final_label = (
+            "POSITIVE" if score > 0
+            else "NEGATIVE" if score < 0
+            else "NEUTRAL"
+        )
+
+        return {
+            "score": float(score),
+            "label": final_label,
+            "breakdown": breakdown
+        }
 
     def analyze(self, ticker, historical_date=None):
+        ticker = ticker.strip().upper()
+        source = "live"
+
         try:
-            # Ignore old cached historical files completely
-            headlines = self.generate_mock_headlines(ticker)
+            # Historical mode
+            if historical_date is not None:
+                headlines = fetch_news(
+                    ticker,
+                    historical_date=historical_date
+                )
+                source = "historical"
 
-            print(f"[Sentiment] Headlines: {headlines}")
+            # Live mode
+            else:
+                headlines = fetch_news(ticker)
 
-            results = self.model(headlines)
+            # Fallback
+            if not headlines:
+                headlines = self._mock_headlines(ticker)
+                source = "mock"
 
-            print(f"[Sentiment] Raw model output: {results}")
-
-            score = 0.0
-
-            for r in results:
-                raw_label = r["label"]
-                confidence = r["score"]
-
-                label = self.label_map.get(
-                    raw_label,
-                    raw_label
-                ).upper()
-
-                if label == "POSITIVE":
-                    score += confidence
-
-                elif label == "NEGATIVE":
-                    score -= confidence
-
-            score = score / len(results)
-
-            final_label = (
-                "POSITIVE" if score > 0
-                else "NEGATIVE" if score < 0
-                else "NEUTRAL"
-            )
+            scored = self._score_headlines(headlines)
 
             return {
-                "score": float(score),
-                "label": final_label,
-                "headlines": headlines
+                "score": scored["score"],
+                "label": scored["label"],
+                "headlines": headlines,
+                "source": source,
+                "breakdown": scored["breakdown"]
             }
 
         except Exception as e:
@@ -101,5 +132,7 @@ class SentimentAgent:
             return {
                 "score": 0.0,
                 "label": "NEUTRAL",
-                "headlines": []
+                "headlines": [],
+                "source": "error",
+                "breakdown": []
             }
