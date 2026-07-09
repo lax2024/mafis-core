@@ -4,7 +4,8 @@ from data.preprocessor import (
     add_ema,
     add_rsi,
     add_macd,
-    add_atr
+    add_atr,
+    add_bollinger_bands
 )
 from utils.signals import generate_signal
 
@@ -19,11 +20,13 @@ class TechnicalAgent:
         else:
             df = fetch_ohlcv(ticker)
 
+        # Add indicators
         df = add_sma(df)
         df = add_ema(df)
         df = add_rsi(df)
         df = add_macd(df)
         df = add_atr(df)
+        df = add_bollinger_bands(df)
 
         latest = df.iloc[-1]
 
@@ -36,6 +39,21 @@ class TechnicalAgent:
             sma200=latest["SMA_200"]
         )
 
+        # Bollinger Band override logic
+        if latest["Close"] < latest["BB_Lower"]:
+            signal = "BUY"
+            confidence = min(confidence + 0.10, 1.0)
+            reasons.append(
+                "Price below lower Bollinger Band (oversold)"
+            )
+
+        elif latest["Close"] > latest["BB_Upper"]:
+            signal = "SELL"
+            confidence = min(confidence + 0.10, 1.0)
+            reasons.append(
+                "Price above upper Bollinger Band (overbought)"
+            )
+
         return {
             "ticker": ticker,
             "signal": signal,
@@ -44,5 +62,7 @@ class TechnicalAgent:
             "rsi": float(latest["RSI"]),
             "macd": float(latest["MACD"]),
             "atr": float(latest["ATR"]),
+            "bb_upper": float(latest["BB_Upper"]),
+            "bb_lower": float(latest["BB_Lower"]),
             "reasons": reasons
         }

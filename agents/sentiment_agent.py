@@ -9,8 +9,7 @@ class SentimentAgent:
     def __init__(self):
         self.model = pipeline(
             "sentiment-analysis",
-             model="/content/mafis-core/models/finbert_custom"
-
+            model="/content/mafis-core/models/finbert_custom"
         )
 
         self.label_map = {
@@ -19,6 +18,9 @@ class SentimentAgent:
             "LABEL_2": "POSITIVE"
         }
 
+    # --------------------------------------------------
+    # Mock fallback headlines
+    # --------------------------------------------------
     def _mock_headlines(self, ticker):
         bullish = [
             f"{ticker} beats earnings expectations",
@@ -49,6 +51,9 @@ class SentimentAgent:
         else:
             return random.sample(neutral, 2) + [random.choice(bullish)]
 
+    # --------------------------------------------------
+    # FinBERT scoring with confidence filtering
+    # --------------------------------------------------
     def _score_headlines(self, headlines):
         results = self.model(
             headlines,
@@ -58,6 +63,7 @@ class SentimentAgent:
 
         score = 0.0
         breakdown = []
+        valid_count = 0
 
         for headline, r in zip(headlines, results):
             raw_label = r["label"]
@@ -67,6 +73,17 @@ class SentimentAgent:
                 raw_label,
                 raw_label
             ).upper()
+
+            # Ignore weak signals
+            if confidence < 0.80:
+                breakdown.append({
+                    "headline": headline,
+                    "label": "IGNORED",
+                    "confidence": round(confidence, 4)
+                })
+                continue
+
+            valid_count += 1
 
             if label == "POSITIVE":
                 score += confidence
@@ -80,7 +97,10 @@ class SentimentAgent:
                 "confidence": round(confidence, 4)
             })
 
-        score = score / len(results)
+        score = (
+            score / valid_count
+            if valid_count > 0 else 0
+        )
 
         final_label = (
             "POSITIVE" if score > 0
@@ -94,6 +114,9 @@ class SentimentAgent:
             "breakdown": breakdown
         }
 
+    # --------------------------------------------------
+    # Main analyze method
+    # --------------------------------------------------
     def analyze(self, ticker, historical_date=None):
         ticker = ticker.strip().upper()
         source = "live"
@@ -111,7 +134,7 @@ class SentimentAgent:
             else:
                 headlines = fetch_news(ticker)
 
-            # Fallback
+            # Fallback if no headlines
             if not headlines:
                 headlines = self._mock_headlines(ticker)
                 source = "mock"

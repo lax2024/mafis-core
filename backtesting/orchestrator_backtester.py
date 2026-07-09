@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
+import time
 import sys
 from pathlib import Path
+
+Path("plots").mkdir(exist_ok=True)
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -37,25 +40,59 @@ class Backtester:
             signal = result["recommendation"]
             current_price = float(df.iloc[i]["Close"])
 
-            if signal in ["BUY", "STRONG BUY"] and cash > 0:
-                shares = cash / current_price
-                cash = 0
+            # BUY (50% allocation)
+            if signal == "BUY" and cash > 0:
 
-                trades.append({
-                    "type": "BUY",
-                    "date": df.index[i],
-                    "price": current_price
-                })
+              investment = cash * 0.50
 
-            elif signal in ["SELL", "STRONG SELL"] and shares > 0:
-                cash = shares * current_price
-                shares = 0
+              shares += investment / current_price
+              cash -= investment
 
-                trades.append({
-                    "type": "SELL",
-                    "date": df.index[i],
-                    "price": current_price
-                })
+              trades.append({
+                "type": "BUY",
+                "date": df.index[i],
+                "price": current_price
+              })
+
+            #STRONG BUY (100% allocation)
+            elif signal == "STRONG BUY" and cash > 0:
+
+             investment = cash
+
+             shares += investment / current_price
+             cash = 0
+
+             trades.append({
+               "type": "STRONG BUY",
+                "date": df.index[i],
+              "price": current_price
+             })
+
+            # SELL (sell 50%)
+            elif signal == "SELL" and shares > 0:
+
+             sell_shares = shares * 0.50
+
+             cash += sell_shares * current_price
+             shares -= sell_shares
+
+             trades.append({
+              "type": "SELL",
+              "date": df.index[i],
+              "price": current_price
+             })
+
+            # STRONG SELL (sell everything)
+            elif signal == "STRONG SELL" and shares > 0:
+
+             cash += shares * current_price
+             shares = 0
+
+             trades.append({
+               "type": "STRONG SELL",
+                "date": df.index[i],
+               "price": current_price
+             })
 
             portfolio_value = cash + (shares * current_price)
             equity_curve.append(portfolio_value)
@@ -77,16 +114,19 @@ class Backtester:
 
         alpha = strategy_return - buy_hold_return
 
+        beat_buy_and_hold = strategy_return > buy_hold_return
+
+        # Profit analysis
         profits = []
         buy_price = None
 
         for trade in trades:
-            if trade["type"] == "BUY":
-                buy_price = trade["price"]
+            if trade["type"] in ["BUY", "STRONG BUY"]:
+             buy_price = trade["price"]
 
-            elif trade["type"] == "SELL" and buy_price is not None:
-                profit = trade["price"] - buy_price
-                profits.append(profit)
+            elif trade["type"] in ["SELL", "STRONG SELL"] and buy_price is not None:
+              profit = trade["price"] - buy_price
+              profits.append(profit)
 
         total_trades = len(profits)
 
@@ -108,6 +148,7 @@ class Backtester:
             if total_trades > 0 else 0
         )
 
+        # Max drawdown
         running_peak = equity_curve[0]
         drawdowns = []
 
@@ -120,6 +161,7 @@ class Backtester:
 
         max_drawdown = max(drawdowns)
 
+        # Sharpe ratio
         returns = []
 
         for i in range(1, len(equity_curve)):
@@ -148,6 +190,7 @@ class Backtester:
             if volatility > 0 else 0
         )
 
+        # Plot comparison
         plt.figure(figsize=(14, 7))
         plt.plot(equity_curve, label="MAFIS Strategy")
         plt.plot(buy_hold_curve, label="Buy & Hold")
@@ -158,7 +201,12 @@ class Backtester:
         plt.ylabel("Portfolio Value")
         plt.legend()
         plt.grid(True)
-        plt.show()
+        plt.savefig(
+         f"plots/{self.ticker}_backtest.png",
+         dpi=300,
+         bbox_inches="tight"
+        )
+        plt.close()
 
         return {
             "ticker": self.ticker,
@@ -171,6 +219,7 @@ class Backtester:
                 buy_hold_return, 2
             ),
             "alpha_percent": round(alpha, 2),
+            "beat_buy_and_hold": beat_buy_and_hold,
             "total_trades": total_trades,
             "winning_trades": winning_trades,
             "losing_trades": losing_trades,
@@ -189,6 +238,82 @@ class Backtester:
 
 
 if __name__ == "__main__":
-    bt = Backtester("TSLA")
-    result = bt.run()
-    print(result)
+    tickers = [
+    "TSLA",
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "AMZN",
+    "RELIANCE",
+    "TCS",
+    "INFY"
+]
+
+    start = time.time()
+
+    all_results = []
+
+    for ticker in tickers:
+     print(f"\nRunning backtest for {ticker}...\n")
+
+     try:
+        bt = Backtester(ticker)
+        result = bt.run()
+        print(
+         f"{ticker}: "
+         f"Return={result['strategy_return_percent']}%, "
+         f"Alpha={result['alpha_percent']}%, "
+         f"Sharpe={result['sharpe_ratio']}"
+        )
+
+        all_results.append({
+            "ticker": ticker,
+            "strategy_return": result["strategy_return_percent"],
+            "buy_hold_return": result["buy_hold_return_percent"],
+            "alpha": result["alpha_percent"],
+            "sharpe": result["sharpe_ratio"],
+            "win_rate": result["win_rate"],
+            "beat_buy_and_hold": result["beat_buy_and_hold"]
+
+        })
+
+     except Exception as e:
+        print(f"{ticker} failed: {e}")
+
+    print("\n===== FINAL SUMMARY =====")
+
+    for r in all_results:
+      print(
+        f"{r['ticker']:10}"
+        f" Return={r['strategy_return']:7.2f}%"
+        f" Alpha={r['alpha']:7.2f}%"
+        f" Sharpe={r['sharpe']:6.2f}"
+        f" WinRate={r['win_rate']:6.2f}%"
+        f" BeatBH={r['beat_buy_and_hold']}"
+      )
+
+    if all_results:
+     avg_alpha = sum(
+        r["alpha"] for r in all_results
+     ) / len(all_results)
+
+     avg_sharpe = sum(
+        r["sharpe"] for r in all_results
+     ) / len(all_results)
+
+     avg_winrate = sum(
+        r["win_rate"] for r in all_results
+     ) / len(all_results)
+
+     print("\n===== AVERAGES =====")
+     print("Average Alpha:", round(avg_alpha, 2))
+     print("Average Sharpe:", round(avg_sharpe, 2))
+     print("Average Win Rate:", round(avg_winrate, 2))
+    else:
+     print("No successful backtests.")
+
+    print(
+    "\nExecution Time:",
+    round(time.time() - start, 2),
+    "seconds"
+    )

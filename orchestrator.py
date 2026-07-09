@@ -15,9 +15,13 @@ class Orchestrator:
     # Technical normalization
     def normalize_technical(self, signal):
         return {
-            "BUY": 1.0,
-            "HOLD": 0.0,
-            "SELL": -1.0
+ 
+      "STRONG BUY": 1.5,
+      "BUY": 1.0,
+      "HOLD": 0.0,
+      "SELL": -1.0,
+      "STRONG SELL": -1.5
+
         }.get(signal, 0.0)
 
     # Sentiment normalization
@@ -34,16 +38,16 @@ class Orchestrator:
     def dynamic_weights(self, regime):
         if regime == "BULLISH":
             return {
-                "technical": 0.40,
-                "sentiment": 0.35,
-                "risk": 0.25
+                "technical": 0.50,
+                "sentiment": 0.30,
+                "risk": 0.20
             }
 
         elif regime == "BEARISH":
             return {
-                "technical": 0.35,
-                "sentiment": 0.40,
-                "risk": 0.25
+                "technical": 0.45,
+                "sentiment": 0.35,
+                "risk": 0.20
             }
 
         # SIDEWAYS
@@ -134,32 +138,22 @@ class Orchestrator:
         )
 
         # Balanced thresholds
-        if fused_score >= 0.55:
+        if fused_score >= 0.70:
            recommendation = "STRONG BUY"
 
-        elif fused_score >= 0.30:
+        elif fused_score >= 0.45:
             recommendation = "BUY"
 
-        elif fused_score <= -0.55:
+        elif fused_score <= -0.70:
             recommendation = "STRONG SELL"
 
-        elif fused_score <= -0.30:
-           recommendation = "SELL"
+        elif fused_score <= -0.45:
+            recommendation = "SELL"
 
         else:
-          recommendation = "HOLD"
+            recommendation = "HOLD"
 
-        # Debug logs
-        print({
-            "technical_score": tech_score,
-            "sentiment_score": sent_score,
-            "risk_score": risk_score,
-            "weights": weights,
-            "fused_score": fused_score,
-            "confidence": confidence,
-            "reasoning": reasoning
-        })
-
+        
         result = {
             "ticker": ticker,
             "recommendation": recommendation,
@@ -173,6 +167,8 @@ class Orchestrator:
             "risk": risk
         }
 
-        save_log(result)
+        # Save logs only during live analysis
+        if historical_df is None:
+          save_log(result)
 
         return result

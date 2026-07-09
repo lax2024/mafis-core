@@ -47,3 +47,13 @@ def add_atr(df, period=14):
     df["ATR"] = true_range.ewm(com=period - 1, min_periods=period).mean()
 
     return df
+
+def add_bollinger_bands(df, period=20):
+    df["BB_Middle"] = df["Close"].rolling(period).mean()
+    bb_std = df["Close"].rolling(period).std()
+
+    df["BB_Upper"] = df["BB_Middle"] + (2 * bb_std)
+    df["BB_Lower"] = df["BB_Middle"] - (2 * bb_std)
+
+    return df
+
