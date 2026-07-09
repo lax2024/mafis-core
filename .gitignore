@@ -1,4 +1,8 @@
-.env
 __pycache__/
 *.pyc
-data/cache/
+.env
+.venv/
+logs/
+cache/
+plots/
+.ipynb_checkpoints/
