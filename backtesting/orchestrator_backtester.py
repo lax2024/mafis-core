@@ -119,6 +119,7 @@ class Backtester:
 
 
 
+
         # Profit analysis
         profits = []
         buy_price = None
@@ -263,12 +264,14 @@ if __name__ == "__main__":
         bt = Backtester(ticker)
         result = bt.run()
 
+
         print(
          f"{ticker}: "
          f"Return={result['strategy_return_percent']}%, "
          f"Alpha={result['alpha_percent']}%, "
          f"Sharpe={result['sharpe_ratio']}"
         )
+
 
 
         all_results.append({
@@ -278,8 +281,10 @@ if __name__ == "__main__":
             "alpha": result["alpha_percent"],
             "sharpe": result["sharpe_ratio"],
 
+
             "win_rate": result["win_rate"],
             "beat_buy_and_hold": result["beat_buy_and_hold"]
+
 
 
         })
@@ -291,6 +296,7 @@ if __name__ == "__main__":
 
     for r in all_results:
 
+
       print(
         f"{r['ticker']:10}"
         f" Return={r['strategy_return']:7.2f}%"
@@ -301,6 +307,7 @@ if __name__ == "__main__":
       )
 
         
+
 
 
     if all_results:
