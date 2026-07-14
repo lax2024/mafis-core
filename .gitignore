@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 *.pyc
 .env
@@ -5,4 +6,29 @@ __pycache__/
 logs/
 cache/
 plots/
+=======
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Cache
+cache/
+data/cache/
+
+# Runtime logs
+logs/
+logs.json
+uvicorn.log
+
+# Generated plots
+plots/
+
+# Temporary files
+untitled
+
+# Notebook checkpoints
+>>>>>>> 7923bda (Update .gitignore)
 .ipynb_checkpoints/
