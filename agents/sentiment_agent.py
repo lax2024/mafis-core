@@ -4,12 +4,16 @@ import random
 from transformers import pipeline
 from data.news_fetcher import fetch_news
 
+from pathlib import Path
 
 class SentimentAgent:
     def __init__(self):
+        base_dir = Path(__file__).resolve().parent.parent
+        model_path = base_dir / "models" / "finbert_custom"
+
         self.model = pipeline(
             "sentiment-analysis",
-            model="/content/mafis-core/models/finbert_custom"
+            model=str(model_path)
         )
 
         self.label_map = {
@@ -159,3 +163,4 @@ class SentimentAgent:
                 "source": "error",
                 "breakdown": []
             }
+        
